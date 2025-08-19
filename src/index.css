@@ -1,0 +1,50 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  overflow-x: hidden;
+}
+
+.dior-font {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.05em;
+}
+
+.video-overlay {
+  background: linear-gradient(45deg, rgba(0,0,0,0.1), rgba(0,0,0,0.3));
+}
+
+.category-border {
+  border-left: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+}
+
+.scroll-container {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Ensure smooth animations */
+* {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Fix for video display */
+video {
+  display: block;
+}
